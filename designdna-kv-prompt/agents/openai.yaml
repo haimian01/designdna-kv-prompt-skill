@@ -1,0 +1,8 @@
+interface:
+  display_name: "DesignDNA KV Prompt"
+  short_description: "从 KV 反推六模块品牌视觉 Prompt Kit，并创建本地品牌资产资源包"
+  brand_color: "#28F5E4"
+  default_prompt: "Use $designdna-kv-prompt to reverse this KV into a six-module structured brand visual prompt kit, or scaffold a local DesignDNA brand asset project when needed."
+
+policy:
+  allow_implicit_invocation: true
