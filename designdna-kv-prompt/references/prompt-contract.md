@@ -91,6 +91,9 @@ Avoid prose-only prompts. Use compact, production-ready sentences.
 ### 品牌图形
 
 Must be a brand-graphic usage board, not a logo redesign.
+This module must be visual-first and copy-light. The board is for showing how
+the brand graphic behaves on different backgrounds, not for creating a dense
+specification manual.
 
 Include:
 
@@ -98,8 +101,24 @@ Include:
 - Whether supplied SVG/logo files exist in the local asset project.
 - Which parts are official assets vs. inferred from the image.
 - A strict ban on generic placeholders when real assets are visible or supplied.
+- Keep the written answer compact: up to 3 visual evidence bullets and up to 3 usage rules.
+- Do not invent technical values such as clear-space multiples, minimum size, file format,
+  print dimensions, or safe-zone numbers unless these are supplied by local assets or
+  reference documents.
 
-Image output: create a horizontal three-column brand-graphic usage board. The columns must be `white background`, `brand visual primary-color background`, and `black background`. Show the same brand graphic centered in each column, using black, white/reversed, and brand-primary/accent variants as appropriate. Keep the layout quiet and precise; no decorative poster background, no extra imagery, no invented logo.
+Image output: create a minimal horizontal three-panel brand-graphic usage board.
+The three panels must be `white background`, `brand visual primary-color background`,
+and `black background`. Show the same brand graphic centered in each panel, using black,
+white/reversed, and brand-primary/accent variants as appropriate. The mark/title lockup
+must occupy most of the visual attention.
+
+Text density limit: short labels only. Do not create paragraphs, bullet lists, duplicated
+Chinese/English explanation blocks, or three-column technical copy. Maximum visible copy:
+panel labels, version labels, and three small rule chips: `官方资产 / 不可重绘`,
+`按背景选择版本`, `禁改形变/描边/特效`. If safety zone or minimum size is unknown,
+write only one tiny footer note: `尺寸/安全区需官方资产确认`; never display fake numbers.
+Keep the layout quiet and precise; no decorative poster background, no extra imagery,
+no invented logo, no info/gear/warning icon clutter, no technical specification columns.
 
 ### 品牌情绪
 
@@ -171,7 +190,7 @@ Image output: create a 16:9 application mockup board with offline and physical s
 Every `Negative Prompt` should adapt this baseline:
 
 ```text
-generic template, unrelated layout, wrong color ratio, random logo, fake official assets, over-clean corporate slide, hard-edged cartoon, low-aesthetic stock design, unreadable text, altered readable text, generic logo, brand placeholder, generic title placeholder, YOUR LOGO, lost small figure, wrong aspect ratio, wrong typography, fake font names, thin sans-serif, galaxy starfield, full source KV preview where not requested, source evidence panel where not requested, decorative star stickers, repeated near-identical texture tiles, random sci-fi landscape
+generic template, unrelated layout, wrong color ratio, random logo, fake official assets, over-clean corporate slide, hard-edged cartoon, low-aesthetic stock design, unreadable text, altered readable text, generic logo, brand placeholder, generic title placeholder, YOUR LOGO, lost small figure, wrong aspect ratio, wrong typography, fake font names, thin sans-serif, galaxy starfield, full source KV preview where not requested, source evidence panel where not requested, decorative star stickers, repeated near-identical texture tiles, random sci-fi landscape, text-heavy usage guideline, dense bilingual bullet list, technical spec wall, fake clear-space value, fake minimum-size value, warning icon clutter, info icon clutter, gear icon clutter
 ```
 
 ## Special Handling: Douyin / Creative Staircase Style
