@@ -123,6 +123,11 @@ no invented logo, no info/gear/warning icon clutter, no technical specification 
 ### 品牌情绪
 
 Must be a KV-derived mood board, not a generic mood board.
+The left source panel is evidence, not a creative interpretation. It must use
+the provided source KV unchanged whenever the image workflow supports image
+input or compositing. If the image generator cannot place the original KV, leave
+the left panel as a clean `SOURCE KV SLOT` placeholder and explicitly state
+`place the provided source KV here unchanged`; never redraw or reinterpret the KV.
 
 Include:
 
@@ -130,8 +135,23 @@ Include:
 - Source color and texture DNA.
 - The relation between the source KV and the mood images.
 - Any human/scene clues if visible.
+- Keep the mood-board text compact: no keyword icon row, no long captions, no fake date/version/project metadata unless supplied.
 
-Image output: create a 16:9 brand mood board. The left side must contain the source KV as a 1:1 square crop or square-framed reference, preserving visible logo/title facts. The right side must be an asymmetric collage of mood images and texture crops derived from the KV's light, color, motion blur, silhouettes, and atmosphere. Include a thin top metadata line and restrained captions. Do not introduce unrelated landscapes, sci-fi worlds, or random stock imagery.
+Image output: create a high-end 16:9 brand mood board. The left side must be a
+large source-reference panel containing the provided KV unchanged, as a 1:1 square
+crop or square-framed original image. Do not change its logo, readable text,
+subject, colors, or composition. Do not add people, light beams, icons, or titles
+inside the source-reference panel.
+
+The right side must be an editorial-quality asymmetric collage derived from the
+source KV's real visual DNA. Use 5-7 carefully composed mood/texture cells:
+one large hero mood image, 2 medium atmosphere/light-path images, and 2-4 small
+texture crops. The right-side cells should feel cinematic, photographic or
+premium abstract, with refined crop, depth, grain, blur, and light behavior.
+Each right-side image must map back to a source fact: color field, light direction,
+motion blur, silhouette/subject logic, texture, or emotional tone. Captions should
+be short labels only. Do not introduce unrelated landscapes, fantasy sci-fi scenes,
+random portraits, stock-photo smiles, or decorative keyword icons.
 
 ### 品牌图形设计理念
 
@@ -190,7 +210,7 @@ Image output: create a 16:9 application mockup board with offline and physical s
 Every `Negative Prompt` should adapt this baseline:
 
 ```text
-generic template, unrelated layout, wrong color ratio, random logo, fake official assets, over-clean corporate slide, hard-edged cartoon, low-aesthetic stock design, unreadable text, altered readable text, generic logo, brand placeholder, generic title placeholder, YOUR LOGO, lost small figure, wrong aspect ratio, wrong typography, fake font names, thin sans-serif, galaxy starfield, full source KV preview where not requested, source evidence panel where not requested, decorative star stickers, repeated near-identical texture tiles, random sci-fi landscape, text-heavy usage guideline, dense bilingual bullet list, technical spec wall, fake clear-space value, fake minimum-size value, warning icon clutter, info icon clutter, gear icon clutter
+generic template, unrelated layout, wrong color ratio, random logo, fake official assets, over-clean corporate slide, hard-edged cartoon, low-aesthetic stock design, unreadable text, altered readable text, generic logo, brand placeholder, generic title placeholder, YOUR LOGO, lost small figure, wrong aspect ratio, wrong typography, fake font names, thin sans-serif, galaxy starfield, full source KV preview where not requested, source evidence panel where not requested, decorative star stickers, repeated near-identical texture tiles, random sci-fi landscape, text-heavy usage guideline, dense bilingual bullet list, technical spec wall, fake clear-space value, fake minimum-size value, warning icon clutter, info icon clutter, gear icon clutter, redrawn source KV, altered source reference, generated fake source panel, fake project metadata, fake date/version labels, keyword icon row, generic AI fantasy collage, stock portrait mood board, unrelated cinematic landscape
 ```
 
 ## Special Handling: Douyin / Creative Staircase Style
